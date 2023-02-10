@@ -38,7 +38,33 @@
       <button>Arbejdstid: 15 min.</button>
       <button>Tid i alt: 30 min.</button>
       <button>Holdbarhed: 2 dage</button>
-      <button id="Antal">Antal Personer: 4</button>
+      <button onclick="myFunction()">Antal Personer: 4</button>
+      <dialog id="Antal">
+        Antal Personer
+        <form method="dialog">
+     <p>
+        <select name="Antal" id="Antal">
+          <option></option>
+        <option>2</option>
+        <option>4</option>
+        <option>6</option>
+        <option>8</option>
+          </select
+        
+
+      </p>
+        
+
+        <button id="cancel" type="reset">Cancel</button>
+        <button type="submit">Confirm</button>
+      </dialog>
+
+      <!--Note: Use the "Esc" button to close the modal. -->
+      <script>
+        function myFunction() {
+          document.getElementById("Antal").showModal();
+        }
+      </script>
     </div>
     <main>
       <section>
